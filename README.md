@@ -622,8 +622,6 @@ Update this tree to reflect the final repository structure.
 
 ## 18. Screenshots
 
-Add the final screenshots to:
-
 ```text
 docs/screenshots/
 ```

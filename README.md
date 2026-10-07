@@ -591,34 +591,29 @@ No performance values are claimed in this README unless they are produced by the
 ## 17. Project Structure
 
 ```text
-cerberus/
-├── backend/
-│   ├── parsers/
-│   ├── schemas/
-│   ├── entity_resolution/
-│   ├── reconstruction/
-│   ├── graph/
-│   ├── evidence/
-│   └── explanation/
-│
-├── frontend/
-│
+Cerberus/
+├── backend/              # Backend API and services
+├── frontend/             # Web dashboard
+├── configs/              # Configuration
+├── schemas/              # Event and entity schemas
+├── parsers/              # Log and dataset parsers
+├── correlation/          # Event/entity correlation
+├── reconstruction/       # Attack reconstruction engine
+├── simulation/           # Synthetic attack simulation
 ├── data/
-│   ├── sample/
-│   └── README.md
-│
-├── scenarios/
-│
-├── scripts/
-│
-├── docs/
-│   ├── architecture.png
-│   └── screenshots/
-│
-├── requirements.txt
-├── .env.example
+│   ├── raw/              # Raw datasets
+│   ├── processed/        # Processed datasets
+│   ├── normalized/       # Canonical events
+│   ├── runtime/          # Runtime data
+│   └── synthetic/        # Synthetic scenarios
+├── outputs/              # Generated results and reports
+├── tests/                # Automated tests
+├── docs/                 # Documentation
+├── screenshots/          # Screenshots and demo assets
 ├── .gitignore
-└── README.md
+├── README.md
+├── requirements.txt
+└── RUNNING_GUIDE.md
 ```
 
 Update this tree to reflect the final repository structure.
@@ -633,24 +628,6 @@ Add the final screenshots to:
 docs/screenshots/
 ```
 
-Recommended screenshots:
-
-1. Threat alert popup
-2. Main security dashboard
-3. Attack investigation and timeline
-4. Entity graph
-5. Evidence panel
-6. Ollama explanation
-
-Example Markdown:
-
-```markdown
-![Threat Alert](docs/screenshots/threat-alert.png)
-
-![Attack Investigation](docs/screenshots/investigation.png)
-
-![Entity Graph](docs/screenshots/entity-graph.png)
-```
 
 ---
 
@@ -671,19 +648,8 @@ Dataset licenses and usage requirements must be followed for all external source
 
 ---
 
-## 20. Team
-
-| Member | Responsibility |
-|---|---|
-| `<Name>` | Data and attack scenarios |
-| `<Name>` | Event processing and entity resolution |
-| `<Name>` | Attack reconstruction |
-| `<Name>` | Frontend, visualization, and explanation |
-
----
 
 ## 21. License
 
 This project was developed for the Hacknex 2026 evaluation.
 
-Add the project's final license here if one is selected.

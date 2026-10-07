@@ -1,0 +1,60 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.tox/
+.nox/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# Python virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python packaging and build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Frontend dependencies and generated builds
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+*.tsbuildinfo
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Logs, temporary files, and editor/OS metadata
+*.log
+logs/
+*.tmp
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+.idea/
+
+# Raw source datasets and generated simulation session data are not committed.
+data/raw/
+data/runtime/
+data/normalized
+data/processed
+data/normalized/*.json
+data/processed/*.json
+!data/normalized/.gitkeep
+!data/processed/.gitkeep
